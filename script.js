@@ -13,7 +13,7 @@ function calc() {
     let qntBeer = Math.ceil((beerForPeaple(duration) * adults)/355) 
     let qntdrink = Math.ceil((drinkForPeaple(duration) * adults + (drinkForPeaple(duration)/2 * childs))/2000)
 
-    result.innerHTML =  `<P>${qntMeat}kg de Carnes </p>`
+    result.innerHTML =  `<P>${qntMeat}kg de Carne </p>`
     result.innerHTML += `<P>${qntBeer} latas de Cerveja </p>`
     result.innerHTML += `<P>${qntdrink} garrafas de Bebidas </p>`
     result.innerHTML += `<hr>`
