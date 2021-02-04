@@ -5,6 +5,7 @@
 
 
 .mainTitle{
+    
     color: rgb(170, 170, 170);
     max-width: 500px;
     grid-area: a1;
@@ -15,16 +16,42 @@
     color:  rgb(170, 170, 170);
 }
 
+@keyframes textAnimation {
+    from{
+        margin-top: 100px;
+    }
+
+    to{
+        margin-bottom: 100px;
+        margin-right: 100px;
+    }
+}
+
+@keyframes imageAnimation {
+    from{
+        margin-left: 500px;
+    }
+
+    to{
+        margin-right: 100px;
+    }
+}
+
 img{
     border-radius: 100%;
     width: 530px;
 } 
 
 .img-pag{
+    animation-name: imageAnimation;
+    animation-duration: 3s;
     grid-area: a2;
 }
 
 .container{
+    animation-name: textAnimation;
+    animation-duration: 3s;
+    border-radius: 100%;
     grid-area: a3;
 }
 
