@@ -15,7 +15,7 @@ function calc() {
 
     result.innerHTML =  `<P>${qntMeat}kg de Carne </p>`
     result.innerHTML += `<P>${qntBeer} latas de Cerveja </p>`
-    result.innerHTML += `<P>${qntdrink} garrafas de Bebidas </p>`
+    result.innerHTML += `<P>${qntdrink} garrafas de refrigerante </p>`
     result.innerHTML += `<hr>`
 }   
 
