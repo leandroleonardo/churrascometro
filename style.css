@@ -116,21 +116,30 @@ input:focus, input:focus, select:focus, button:focus, button:focus{
 
 @media (max-width: 600px)
 {
+    *{
+        margin: 5px;
+        padding: 0;
+    }
+
     main{
         display: inline-block;
     }
+    
     .mainTitle,.titleChurras{
-        font-size: 20px;
-        width: 200px;
+        font-size: 25px;
+        width: 300px;
     }
 
     img{
-        display: inline;
-        width: 150px;
+        width: 300px;
     }
 
     .container{
-        max-width: 200px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        align-items: center;
     }
 
     footer{
