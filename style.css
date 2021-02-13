@@ -3,17 +3,28 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
 .mainTitle{
-    
-    color: rgb(170, 170, 170);
-    max-width: 500px;
+    animation: textColorAnimation;
+    animation-duration: 3s;
+    color:  rgb(170, 170, 170);
+    max-width: 600px;
     grid-area: a1;
 }
 
 .titleChurras{
     margin-bottom: 30px;
     color:  rgb(170, 170, 170);
+}
+
+@keyframes textColorAnimation {
+    
+    from{
+        color: white;
+    }
+    
+    to{
+        color:  rgb(170, 170, 170);
+    }
 }
 
 @keyframes textAnimation {
@@ -45,12 +56,14 @@ img{
 .img-pag{
     animation-name: imageAnimation;
     animation-duration: 3s;
+    animation-fill-mode: forwards;
     grid-area: a2;
 }
 
 .container{
     animation-name: textAnimation;
     animation-duration: 3s;
+    animation-fill-mode: forwards;
     border-radius: 100%;
     grid-area: a3;
 }
@@ -127,7 +140,7 @@ input:focus, input:focus, select:focus, button:focus, button:focus{
     
     .mainTitle,.titleChurras{
         font-size: 25px;
-        width: 300px;
+        width: 390px;
     }
 
     img{
