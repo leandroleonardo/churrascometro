@@ -4,7 +4,6 @@
 
 ![alt text](https://github.com/leandroleonardo/churrascometro/blob/main/img/photo.PNG)
 
-<hr>
 
 <h3>💻Stack de tecnologias utilizadas</h3>
 
@@ -13,9 +12,8 @@
     <li>CSS</li>
     <li>JAVASCRIPT</li>
 </ul>
-
-<h3>📗Sobre o projeto</h3>
 <hr>
+<h3>📗Sobre o projeto</h3>
 <p>
 
 Sistema capaz de calcular a quantidade de comida e bebida necessária para um churrasco,
