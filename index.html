@@ -4,41 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Churrascômetro</title>
-    <link rel="sortcut icon" href="./img/food.jpg" type="image/x-icon" />
-
+    <link rel="sortcut icon" href="./img/meat.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        
-        <div class="mainTitle">
-            <h1 class="mainTitle">Verifique a quantidade de comida que 
-                você precisará para seu churrasco!!</h1>
-        </div>
-        
-        <div class="img-pag">
-            <img src="./img/peaple.jpg" alt="">
-        </div>
-            
-        <div class="container">
-            
-            <h1 class="titleChurras">Churrascômetro</h1>
-            
-            <input type="number" name="adult" id="adult" placeholder="Adultos">
-            <input type="number" name="child" id="child" placeholder="Crianças">
-            <input type="number" name="duration" id="duration" placeholder="Horas">
-            
-            <button onclick="calc()">Calcular</button>
 
-            <div id="result"></div>
-        </main>
-    </div>
+        <div id="container">
+
+            <section id="container-text">
+
+                <div id="data-text">
+                    <h1>Churrascômetro</h1>
+                    <p>
+                        Já pensou em poder calcular a quantidade de comida e bebida para seu churrasco. Vamos calcular?
+                    </p>
+                    <button id="goCalc">Calcular</button>
+                </div>
+
+                <div class="calc">
+                    <h1 class="Calcule">Calcule</h1>
+                    <input type="number" name="adult" id="adult" placeholder="Adultos">
+                    <input type="number" name="child" id="child" placeholder="Crianças">
+                    <input type="number" name="duration" id="duration" placeholder="Horas">
+                    <button id="buttonCalc" onclick="calc()">Calcular</button>
+                    <div id="result"></div>
+            </section>
+            
+            <section>
+                <div>
+                    <img id="img-pag" src="./img/peaple.jpg" alt="">
+                </div>
+            </section>
+        </div>
+
+    </main>
+
     <script src="script.js"></script>
-    <footer>
-        <ul>
-            <li><a href="https://www.instagram.com/_leandro.leo/">Insta: @Leandro.leo</a></li>
-            <li><a href="https://github.com/leandroleonardo"> GitHub: leandroleonardo</a></li>
-        </ul>
-    </footer>
+
 </body>
 </html>

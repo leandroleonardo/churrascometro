@@ -1,161 +1,111 @@
 *{
-    margin: 10px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins';
 }
 
-.mainTitle{
-    animation: textColorAnimation;
-    animation-duration: 3s;
-    color:  rgb(170, 170, 170);
-    max-width: 600px;
-    grid-area: a1;
+#img-pag{
+    width:45vw;
 }
 
-.titleChurras{
-    margin-bottom: 30px;
-    color:  rgb(170, 170, 170);
+#container{
+    display:grid;
+    grid-template: 100vh /1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
 }
 
-@keyframes textColorAnimation {
-    
-    from{
-        color: white;
-    }
-    
-    to{
-        color:  rgb(170, 170, 170);
-    }
+#container-text{
+    color:grey;
+    font-size: 1.5rem;
+    max-width: 70vw;
+    margin-left: 2rem;
 }
 
-@keyframes textAnimation {
-    from{
-        margin-top: 100px;
-    }
-
-    to{
-        margin-bottom: 100px;
-        margin-right: 100px;
-    }
+#container-text > div > h1{
+    color:rgb(34, 243, 156);
 }
 
-@keyframes imageAnimation {
-    from{
-        margin-left: 500px;
-    }
-
-    to{
-        margin-right: 100px;
-    }
+#container-text div h1{
+    padding-bottom: 10px;
 }
 
-img{
-    border-radius: 100%;
-    width: 530px;
-} 
-
-.img-pag{
-    animation-name: imageAnimation;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    grid-area: a2;
+#container-text > div {
+    padding-bottom: 20px;
 }
 
-.container{
-    animation-name: textAnimation;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    border-radius: 100%;
-    grid-area: a3;
+.calc{
+    display:none;
+    flex-direction: column;
+    max-width: 250px;
+    justify-content: center;
+    margin-left:1.5rem;
 }
 
-main{
-    display: grid;
-    grid-template-areas: "a1 a1" 
-                         "a2 a3";
-    row-gap: 5%;
+#goCalc{
+    border: none;
+    border-radius:10px;
+    background-color: rgb(38, 238, 155);
+    color:white;
+    padding: 10px;
+    cursor: pointer;
+    width: 200px;
+    margin-top: 20px;
+    font-size: 15px;
 }
+
+.calc input{
+    border: 1px solid rgb(209, 209, 209);
+    padding: 10px;
+    margin-bottom:10px;
+}
+
+.calc input:focus{
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+#buttonCalc{
+    border: 1px solid rgb(209, 209, 209);
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* config buttons */ 
+
+button:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+/* result */
 
 #result{
-    margin-top:30px;
-    color: grey;
-    max-width: 250px;
+    display:grid;
+    grid-template:1fr 1fr 1fr/ 0.2fr 1fr;
+    align-items: center;
+    justify-content:center;
+    margin-top: 20px;
+    font-size: 15px;
 }
 
-input{
-    width: 100%;
-    padding: 10px;
-    display: block;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    border: none;
-    border: 1px solid rgb(202, 202, 202);
-    max-width: 250px;
+#result > img{
+    width:30px;
 }
 
-button {
-    border: 1px solid rgb(168, 168, 168);
-    color: grey;
-    padding: 5px;
-}
-
-footer,ul,li,a{
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    color: grey;
-    text-align: center;
-    margin: 0;
-    margin-left: 10px;
-}
-
-a:hover{
-    text-shadow: grey 10px 1px 10px;
-}
-
-button:focus, input:focus{
-    box-shadow: grey 1px 1px 5px 1px;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-
-input:focus, input:focus, select:focus, button:focus, button:focus{
-    border: 1px solid grey;
-    outline: 0;
-} 
-
-@media (max-width: 600px)
-{
-    *{
-        margin: 5px;
-        padding: 0;
-    }
-
-    main{
-        display: inline-block;
-    }
-    
-    .mainTitle,.titleChurras{
-        font-size: 25px;
-        width: 390px;
-    }
-
-    img{
-        width: 300px;
-    }
-
-    .container{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        display: flex;
-        align-items: center;
-    }
-
-    footer{
-        display: none;
+@media (max-width:700px){
+    #img-pag{
+        display:none;
     }
 }
